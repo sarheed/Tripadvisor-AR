@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login - TripAdvisor AR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div id="login-overlay" class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Log ind - Tripadvisor AR</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-xs-6">
+                  <div class="well">
+                      <form id="loginForm" method="POST" action="login.php" novalidate="novalidate">
+                          <div class="form-group">
+                              <label for="username" class="control-label">Brugernavn</label>
+                              <input type="text" class="form-control" id="username" name="username" value="" required="" title="Indtast dit brugernavn her" placeholder="eksempel@gmail.com">
+                              <span class="help-block"></span>
+                          </div>
+                          <div class="form-group">
+                              <label for="password" class="control-label">Adgangskode</label>
+                              <input type="password" class="form-control" id="password" name="password" value="" required="" title="Indtast din adgangskode her">
+                              <span class="help-block"></span>
+                          </div>
+                          <div id="loginErrorMsg" class="alert alert-error hide">Forkert brugernavn eller adgangskode.</div>
+
+                          <button type="submit" class="btn btn-success btn-block">Log ind</button>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-xs-6">
+                <p class="lead">Opret dit som bruger</p>
+                <ul class="list-unstyled" style="line-height: 2">
+                    <li><span class="fa fa-check text-success"></span> Se alle tasks</li>
+                    <li><span class="fa fa-check text-success"></span> Byd med dit bidgrad til tasks</li>
+                    <li><span class="fa fa-check text-success"></span> Få <span class="text-success">betaling for dit arbejde</span></li><br/>
+                </ul>
+                <p><a href="signup.html" class="btn btn-info btn-block">Opret mig som bruger</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
